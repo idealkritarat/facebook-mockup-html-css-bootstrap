@@ -262,6 +262,7 @@ main .center .post .post-photo {
 }
 
 main .center .post .stats {
+    flex-wrap: wrap;
     border-bottom: 1px solid #444;
 }
 
@@ -295,13 +296,23 @@ main .center .post .interactions .grid-box .custom-btn:hover {
 
 /* Responsive */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     body {
         overflow-x: hidden;
     }
 
     header {
-        min-height: none;
+        padding: 10px 0;
+    }
+
+    header > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .left {
+        min-width: fit-content;
     }
 
     main {
@@ -322,15 +333,6 @@ main .center .post .interactions .grid-box .custom-btn:hover {
         display: flex;
         flex-direction: column;
         gap: 5px;
-    }
-
-    header {
-        justify-content: center;
-    }
-    header .left, header .right {
-        min-width:fit-content;
-        flex-grow: 0;
-        
     }
 
 }
