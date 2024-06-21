@@ -99,39 +99,44 @@ main aside {
     position: sticky;
     top: 56px;
 }
-main .custom-btn-group {
+main aside .custom-btn-group {
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
 }
 
-main .custom-btn-group .custom-btn {
+main aside .custom-btn-group .custom-btn {
     display: flex;
     align-items: center;
     text-align: start;
     color: #eee;
     min-height: 52px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
 }
 
-main .custom-btn-group .custom-btn-group-title {
+main aside .custom-btn-group .custom-btn-group-title {
     font-weight: 700;
     padding: 10px 0;
     color: #999;
 }
 
-main .custom-btn-group .custom-btn i {
+main aside .custom-btn-group .custom-btn i {
+    display: grid;
+    place-content: center;
     height: 36px;
     width: 36px;
     font-size:28px;
     margin-right: 12px;
 }
 
-main .custom-btn-group .custom-btn span{
+main aside .custom-btn-group .custom-btn span{
     font-size:15px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-main .custom-btn-group .custom-btn i.bi-three-dots {
+main aside .custom-btn-group .custom-btn i.bi-three-dots {
     display: grid;
     font-size: 20px;
     height: 30px;
