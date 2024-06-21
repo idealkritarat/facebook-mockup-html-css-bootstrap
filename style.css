@@ -1,0 +1,336 @@
+/* header */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #222;
+    min-height: 56px;
+    border-bottom: 1px solid #444;
+}
+
+header > col {
+    height: 100%;
+}
+
+header .left {
+    width: 10px;
+}
+
+header .left img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+header .left .search {
+    background-color: #444;
+    border-radius: 200px;
+    color: #999;
+    font-size: 15px;
+}
+
+header .left .search input {
+    background: transparent;
+    border: none;
+    max-width: 100%;
+    
+}
+
+header .center ul li {
+    height: 100%;
+    flex-grow: 1;
+    max-width: 130px;
+    min-width: none;
+}
+
+header .center ul li a {
+    display: grid;
+    place-content: center;
+    height: 100%;
+    color: #aaa;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+header .center ul li.active {
+    a {
+        color: rgb(0, 110, 255);
+    }
+    border-bottom: 3px solid rgb(0, 110, 255);
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+header .center ul li.active a:hover {
+    background-color: transparent;
+}
+
+header .center ul li a.active:hover {
+    background-color: transparent;
+}
+
+header .center ul li a:hover {
+    background-color: #555;
+}
+
+header .right ul li a {
+    display: grid;
+    place-content: center;
+    color: #eee;
+    background-color: #555;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+header .right ul li a:hover {
+    background-color: #666;
+}
+
+/* main */
+
+main {
+    background-color: #1a1a1a;
+}
+
+main aside {
+    max-width: 360px;
+    height: 100vh;
+    position: sticky;
+    top: 56px;
+}
+main .custom-btn-group {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+main .custom-btn-group .custom-btn {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    color: #eee;
+    min-height: 52px;
+}
+
+main .custom-btn-group .custom-btn-group-title {
+    font-weight: 700;
+    padding: 10px 0;
+    color: #999;
+}
+
+main .custom-btn-group .custom-btn i {
+    height: 36px;
+    width: 36px;
+    font-size:28px;
+    margin-right: 12px;
+}
+
+main .custom-btn-group .custom-btn span{
+    font-size:15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main .custom-btn-group .custom-btn i.bi-three-dots {
+    display: grid;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    place-content: center;
+    background-color: #333;
+    border-radius: 100%;
+}
+
+main .custom-btn-group .custom-btn:hover {
+    background-color: #333;
+}
+
+main .center {
+    max-width: 100vw;
+}
+
+main .center > * {
+    max-width: 680px;
+}
+
+main .center .stories .story-item {
+    height: 250px;
+    width: 140px;
+    background-color: #444;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+main .center .create-post {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    background-color: #222;
+    border-radius: 7px;
+}
+
+main .center .create-post .input-text {
+    grid-area: 1 / 1 / 1 / 4;
+    border-bottom: 1px solid #444;
+}
+
+main .center .create-post .input-text i {
+    font-size: 35px;
+    color: #eee;
+}
+
+main .center .create-post .input-text .search {
+    background-color: #444;
+    border-radius: 200px;
+    color: #999;
+    font-size: 15px;
+    width: 100%;
+}
+
+main .center .create-post .input-text .search input {
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+main .center .create-post .grid-box .custom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #999;
+    cursor: pointer;
+    width:100%;
+    height: 100%;
+}
+
+main .center .create-post .grid-box .custom-btn:hover {
+    background-color: #444;
+}
+
+main .center .create-post .grid-box .custom-btn .bi-camera-reels-fill {
+    color: red;
+}
+
+main .center .create-post .grid-box .custom-btn .bi-file-image {
+    color: #00C524;
+}
+
+main .center .create-post .grid-box .custom-btn .bi-emoji-smile-fill {
+    color: #ffc400;
+}
+
+main .center .post {
+    width: 100%;
+    background-color: #222;
+    border-radius: 7px;
+}
+
+main .center .post .post-header {
+    color: #fff;
+}
+
+main .center .post .post-header .post-banner .left .bi-person-circle{
+    font-size: 35px;
+}
+
+main .center .post .post-header .post-banner .left .username {
+    padding-top: 5px;
+}
+
+main .center .post .post-header .post-banner .left .username span {
+    font-size: 15px;
+}
+
+main .center .post .post-header .post-banner .left .username span:last-child {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #999;
+    font-size: 13px;
+}
+
+main .center .post .post-header .title {
+    font-size: 15px;
+}
+
+main .center .post .post-photo {
+    width: 100%;
+    background-color: #444;
+    height: 550px;
+}
+
+main .center .post .stats {
+    border-bottom: 1px solid #444;
+}
+
+main .center .post .stats .right, main .center .post .stats .left {
+    gap: 10px;
+    font-size: 15px;
+    color: #999;
+}
+
+main .center .post .interactions {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5px;
+}
+
+main .center .post .interactions .grid-box .custom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #999;
+    padding: 5px;
+    cursor: pointer;
+    width:100%;
+    height: 100%;
+}
+
+main .center .post .interactions .grid-box .custom-btn:hover {
+    background-color: #444;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 400px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        min-height: none;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    main .center .create-post {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    main .center .create-post .input-text {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+
+    main .center .post .interactions {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header {
+        justify-content: center;
+    }
+    header .left, header .right {
+        min-width:fit-content;
+        flex-grow: 0;
+        
+    }
+
+}
